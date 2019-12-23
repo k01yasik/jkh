@@ -25,31 +25,30 @@
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
         <link href="{{asset('css/app.css')}}" rel="stylesheet">
     </head>
-    <body class="">
-        <header class="">
-            <div class="">
-                <div class="">
-                    <div class="">Вход</div>
-                    <div class="">Регистрация</div>
-                </div>
-                <div class="">
+    <body>
+        <header>
+            <div class="container">
+                <div class="registration-row">
                     <div class="margin-b-2">
-                        <a href="{{route('pages.home')}}" class="">
-                            <img src="{{asset('/android-icon-192x192.png')}}" class=""/>
+                        <a href="http://jkh" class="logo-link">
+                            <img src="http://jkh/android-icon-192x192.png" class="logo-img">
                         </a>
-                        <a href="{{route('pages.home')}}" class="logo-name">{{ __('system_jkh') }}</a>
+                        <a href="http://jkh" class="logo-name">Система ЖКХ</a>
                     </div>
-                    <div class="">
-                        <div class="">
-                            <div class="">
-                                <div class="">Отчеты</div>
+
+                    <div class="margin-b-2 center-items">
+
+                        <div class="signin">Вход</div><div class="signup">Регистрация</div>
+                    </div></div>
+                <div class="menu-row">
+
+                    <div class="margin-b-2">
+                        <div class="vertical-group-button">
+                            <div class="v-g-button-element">
+                                Отчеты
                             </div>
-                            <div class="">
-                                <div class="">Запросы</div>
-                            </div>
-                            <div class="">
-                                <div class="">Обращения</div>
-                            </div>
+                            <div class="v-g-button-element">Запросы</div>
+                            <div class="v-g-button-element">Обращения</div>
                         </div>
                     </div>
                 </div>
