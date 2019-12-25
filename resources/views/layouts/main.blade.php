@@ -30,15 +30,15 @@
             <div class="container">
                 <div class="registration-row">
                     <div class="margin-b-2">
-                        <a href="http://jkh" class="logo-link">
-                            <img src="http://jkh/android-icon-192x192.png" class="logo-img">
+                        <a href="{{route('pages.home')}}" class="logo-link">
+                            <img src="{{asset('android-icon-192x192.png')}}" class="logo-img">
                         </a>
-                        <a href="http://jkh" class="logo-name">Система ЖКХ</a>
+                        <a href="{{route('pages.home')}}" class="logo-name">Система ЖКХ</a>
                     </div>
 
                     <div class="margin-b-2 center-items">
-
-                        <div class="signin">Вход</div><div class="signup">Регистрация</div>
+                    <div class="signin">Вход</div>
+                    <div class="signup">Регистрация</div>
                     </div></div>
                 <div class="menu-row">
 
@@ -54,12 +54,10 @@
                 </div>
             </div>
         </header>
-        <div class="main">
-            <main>
-                @yield('content')
-            </main>
-        </div>
-        <footer class="">
+        <main>
+            @yield('content')
+        </main>
+        <footer>
         </footer>
         @include('components.webfont')
         <script src="{{ asset('js/app.js') }}"></script>
