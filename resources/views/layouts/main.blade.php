@@ -28,21 +28,22 @@
     <body>
         <header>
             <div class="container">
-                <div class="registration-row">
-                    <div class="margin-b-2">
+                <div class="row flex-v-align">
+                    <div class="col s12 m4 l3 logo-block margin-b2">
                         <a href="{{route('pages.home')}}" class="logo-link">
                             <img src="{{asset('android-icon-192x192.png')}}" class="logo-img">
                         </a>
                         <a href="{{route('pages.home')}}" class="logo-name">Система ЖКХ</a>
                     </div>
 
-                    <div class="margin-b-2 center-items">
-                    <div class="signin">Вход</div>
-                    <div class="signup">Регистрация</div>
-                    </div></div>
-                <div class="menu-row">
+                    <div class="col s12 m4 offset-m4 l3 offset-l6">
+                        <div class="signin">Вход</div>
+                        <div class="signup">Регистрация</div>
+                    </div>
+                </div>
+                <div class="row">
 
-                    <div class="margin-b-2">
+                    <div class="col s4 offset-s4 m4 offset-m4 l4 offset-l4">
                         <div class="vertical-group-button">
                             <div class="v-g-button-element">
                                 Отчеты

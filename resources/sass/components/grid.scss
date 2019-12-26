@@ -34,7 +34,7 @@
 .row {
   float: left;
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 
   &:last-child {
     margin-bottom: 0;
@@ -74,6 +74,62 @@
       $w-perc: unquote((($block-w + $margin-r) * $i) + "%");
       @include grid-classes("s", $i, $w-perc);
       $i: $i + 1;
+    }
+
+    @media only screen and (min-width: 601px) {
+      $i: 1;
+      $columns: 12;
+      $margin-r: 2;
+      $block-w: (100 - ($columns - 1) * $margin-r) / $columns;
+
+      @while $i <= $columns {
+        $w-perc: unquote(($block-w * $i + $margin-r * ($i - 1)) + "%");
+        $margin-perc: unquote(($margin-r) + "%");
+
+        &.m#{$i} {
+          width: $w-perc;
+          @if $i < $columns { margin-right: $margin-perc; }
+          @if $i == $columns { margin-right: 0; }
+        }
+
+        $i: $i + 1;
+      }
+
+      $i: 1;
+
+      @while $i <= $columns {
+        $w-perc: unquote((($block-w + $margin-r) * $i) + "%");
+        @include grid-classes("m", $i, $w-perc);
+        $i: $i + 1;
+      }
+    }
+
+    @media only screen and (min-width: 993px) {
+      $i: 1;
+      $columns: 12;
+      $margin-r: 2;
+      $block-w: (100 - ($columns - 1) * $margin-r) / $columns;
+
+      @while $i <= $columns {
+        $w-perc: unquote(($block-w * $i + $margin-r * ($i - 1)) + "%");
+        $margin-perc: unquote(($margin-r) + "%");
+
+        &.l#{$i} {
+          width: $w-perc;
+          @if $i < $columns { margin-right: $margin-perc; }
+          @if $i == $columns { margin-right: 0; }
+        }
+
+        $i: $i + 1;
+      }
+
+      $i: 1;
+
+      @while $i <= $columns {
+        $w-perc: unquote((($block-w + $margin-r) * $i) + "%");
+        @include grid-classes("l", $i, $w-perc);
+        $i: $i + 1;
+      }
     }
 
     &:last-child {

@@ -6,13 +6,13 @@ header {
   background: $main-color;
   float: left;
   width: 100%;
+  padding: 2em 0;
 }
 
 main {
   position: relative;
   float: left;
   width: 100%;
-  margin: 2em 0;
 }
 
 footer {
@@ -54,26 +54,31 @@ html {
   margin-left: 1em;
 }
 
+.logo-block {
+  display: flex;
+  align-items: center;
+}
+
 .signin {
   background: white;
-  padding: 0 2em;
   height: 3em;
   line-height: 3em;
   border-radius: 3px 0 0 3px;
   width: 30%;
   text-align: center;
   color: $main-color;
+  float: left;
 }
 
 .signup {
   background: $second-color;
   height: 3em;
   line-height: 3em;
-  padding: 0 2em;
   color: $white;
   border-radius: 0 3px 3px 0;
   text-align: center;
   width: 70%;
+  float: left;
 }
 
 .registration-row {
@@ -110,4 +115,8 @@ html {
   height: 3em;
   background: #444a90;
   border-radius: 3px;
+}
+
+.margin-b2 {
+  margin-bottom: 2em;
 }
