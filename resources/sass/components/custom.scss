@@ -91,11 +91,6 @@ html {
   width: 100%;
 }
 
-.vertical-group-button {
-  width: 50%;
-  margin: 0 auto;
-}
-
 .v-g-button-element {
   height: 3em;
   line-height: 3em;
@@ -119,4 +114,16 @@ html {
 
 .margin-b2 {
   margin-bottom: 2em;
+}
+
+.button-v-stack {
+  margin-bottom: .5em;
+}
+
+.row {
+  .button-v-stack {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

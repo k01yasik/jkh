@@ -536,7 +536,7 @@ template {
 .row {
   float: left;
   width: 100%;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 
 .row:last-child {
@@ -983,11 +983,6 @@ html {
   width: 100%;
 }
 
-.vertical-group-button {
-  width: 50%;
-  margin: 0 auto;
-}
-
 .v-g-button-element {
   height: 3em;
   line-height: 3em;
@@ -1013,6 +1008,14 @@ html {
   margin-bottom: 2em;
 }
 
+.button-v-stack {
+  margin-bottom: 0.5em;
+}
+
+.row .button-v-stack:last-child {
+  margin-bottom: 0;
+}
+
 @media only screen and (min-width: 601px) {
   .margin-b2 {
     margin-bottom: 0;
@@ -1023,6 +1026,10 @@ html {
     display: flex;
     -webkit-box-align: center;
             align-items: center;
+  }
+
+  .button-v-stack {
+    margin-bottom: 0;
   }
 }
 

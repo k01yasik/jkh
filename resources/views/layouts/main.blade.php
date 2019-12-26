@@ -42,15 +42,13 @@
                     </div>
                 </div>
                 <div class="row">
-
-                    <div class="col s4 offset-s4 m4 offset-m4 l4 offset-l4">
-                        <div class="vertical-group-button">
-                            <div class="v-g-button-element">
-                                Отчеты
-                            </div>
-                            <div class="v-g-button-element">Запросы</div>
-                            <div class="v-g-button-element">Обращения</div>
-                        </div>
+                    <div class="col s12 m3 offset-m3 l2 offset-l6 button-v-stack">
+                        <div class="v-g-button-element">Отчеты</div>
+                    </div>
+                    <div class="col s12 m3 l2 button-v-stack">
+                        <div class="v-g-button-element">Запросы</div>
+                    </div><div class="col s12 m3 l2 button-v-stack">
+                        <div class="v-g-button-element">Обращения</div>
                     </div>
                 </div>
             </div>
