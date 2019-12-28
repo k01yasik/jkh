@@ -952,25 +952,35 @@ html {
 }
 
 .signin {
-  background: white;
-  height: 3em;
-  line-height: 3em;
+  height: 2em;
+  line-height: 2em;
   border-radius: 3px 0 0 3px;
-  width: 30%;
+  width: 40%;
   text-align: center;
-  color: #4a148c;
-  float: left;
+  color: #ffffff;
+  float: right;
+  border-right: 1px solid #ffffff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
 .signup {
-  background: #cf4a0e;
-  height: 3em;
-  line-height: 3em;
+  height: 2em;
+  line-height: 2em;
   color: #ffffff;
   border-radius: 0 3px 3px 0;
   text-align: center;
-  width: 70%;
-  float: left;
+  width: 60%;
+  float: right;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.signup:hover {
+  background: #ffffff;
+  color: #4a148c;
 }
 
 .registration-row {
@@ -984,14 +994,19 @@ html {
 }
 
 .v-g-button-element {
-  height: 3em;
-  line-height: 3em;
-  background: white;
-  color: #4a148c;
+  height: 2em;
+  color: #ffffff;
   border-radius: 3px;
   cursor: pointer;
   margin-bottom: 0.5em;
   text-align: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.v-g-button-element:hover {
+  background: #ffffff;
+  color: #4a148c;
 }
 
 .v-g-button-element:last-child {
@@ -1010,6 +1025,12 @@ html {
 
 .button-v-stack {
   margin-bottom: 0.5em;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 .row .button-v-stack:last-child {
