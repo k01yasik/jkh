@@ -895,6 +895,10 @@ header {
   float: left;
   width: 100%;
   padding: 2em 0;
+  background-image: url(/images/house.jpg);
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
 }
 
 main {
@@ -965,6 +969,11 @@ html {
   cursor: pointer;
 }
 
+.signin:hover {
+  background: #ffffff;
+  color: #4a148c;
+}
+
 .signup {
   height: 2em;
   line-height: 2em;
@@ -994,7 +1003,7 @@ html {
 }
 
 .v-g-button-element {
-  height: 2em;
+  height: 3em;
   color: #ffffff;
   border-radius: 3px;
   cursor: pointer;
@@ -1002,6 +1011,14 @@ html {
   text-align: center;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  width: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  border: 1px solid #ffffff;
 }
 
 .v-g-button-element:hover {
@@ -1037,6 +1054,10 @@ html {
   margin-bottom: 0;
 }
 
+.registration-group {
+  margin: 0 auto;
+}
+
 @media only screen and (min-width: 601px) {
   .margin-b2 {
     margin-bottom: 0;
@@ -1051,6 +1072,13 @@ html {
 
   .button-v-stack {
     margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .v-g-button-element,
+  .registration-group {
+    max-width: 300px;
   }
 }
 
