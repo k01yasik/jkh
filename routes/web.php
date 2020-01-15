@@ -13,4 +13,10 @@
 
 Route::get('/', 'PageController@home')->name('pages.home');
 
+Route::get('/reports', 'ReportController@index')->name('report.index');
+
+Route::get('/inquiry', 'InquiryController@index')->name('inquiry.index');
+
+Route::get('/appeal', 'AppealController@index')->name('appeal.index');
+
 Auth::routes();

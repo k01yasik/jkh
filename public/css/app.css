@@ -912,6 +912,10 @@ footer {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 .margin-b-2 {
   float: left;
   width: 100%;
@@ -1056,6 +1060,11 @@ html {
 
 .registration-group {
   margin: 0 auto;
+}
+
+.active {
+  background: #ffffff;
+  color: #4a148c;
 }
 
 @media only screen and (min-width: 601px) {
