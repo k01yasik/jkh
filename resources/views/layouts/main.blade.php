@@ -29,9 +29,15 @@
         <header>
             @include('components.header')
         </header>
-        <main>
-            @yield('content')
-        </main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <main>
+                        @yield('content')
+                    </main>
+                </div>
+            </div>
+        </div>        
         <footer>
         </footer>
         @include('components.webfont')
